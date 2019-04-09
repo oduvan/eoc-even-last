@@ -1,0 +1,52 @@
+<img class="for_info_only half" title="slice" src="{{MEDIA}}slice.png" alt="slice"
+     style="float: left; "/>
+
+
+<p>
+    Дан массив целых чисел. Нужно найти сумму элементов с четными индексами (0-й, 2-й, 4-й итд),
+    затем перемножить эту сумму и последний элемент исходного массива.
+    Не забудьте, что первый элемент массива имеет индекс 0.
+</p>
+
+<p>
+    Для пустого массива результат всегда 0 (ноль).
+</p>
+
+<p>
+    <strong>Входные данные: </strong> Список (list) целых чисел (int).
+</p>
+
+<p>
+    <strong>Выходные данные: </strong> Число как целочисленное (int).
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>Примеры:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+evenLast([0, 1, 2, 3, 4, 5]) == 30
+evenLast([1, 3, 5]) == 30
+evenLast([6]) == 36
+evenLast([]) == 0
+{% else %}
+checkio([0, 1, 2, 3, 4, 5]) == 30
+checkio([1, 3, 5]) == 30
+checkio([6]) == 36
+checkio([]) == 0
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Зачем это нужно: </strong>
+    Индексы и срезы - очень важные элементы программирования, как на Python, так и на других языках.
+    Это поможет вам в дальнейшем.
+</p>
+
+<p>
+    <strong>Предусловия: </strong>
+    0 &le; len(array) &le; 20<br>
+    all(isinstance(x, int) for x in array)<br>
+    all(-100 &lt; x &lt; 100 for x in array)<br>
+</p>

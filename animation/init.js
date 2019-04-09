@@ -7,7 +7,7 @@ requirejs(['ext_editor_io', 'jquery_190'],
         var io = new extIO({
             functions: {
                 js: 'evenLast',
-                python: 'checkio'
+                python: 'even_last'
             },
             animation: function($expl, data){
                 if (!data.ext) {

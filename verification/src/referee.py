@@ -10,9 +10,9 @@ class Referee(RefereeRank):
     TESTS = TESTS
     ENVIRONMENTS = settings_env.ENVIRONMENTS
 
-    DEFAULT_FUNCTION_NAME = "checkio"
+    DEFAULT_FUNCTION_NAME = "even_last"
     FUNCTION_NAMES = {
-        "python_3": "checkio",
+        "python_3": "even_last",
         "js_node": "evenLast"
     }
     ENV_COVERCODE = {
